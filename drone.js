@@ -17,7 +17,7 @@ Cylon.robot({
 
 
   work: function(my) {
-    // console.log(my.drone)
+    console.log(my.drone)
     my.keyboard.on("keypress", function(key) {
       console.log(key.name + " PRESSED!");
       if (key.name === "t") {
@@ -77,7 +77,10 @@ Cylon.robot({
         my.drone.wave();
       }
     });
+    my.keyboard.on("keyup", function(key) {
+      console.log("hovering");
+      my.drone.hover();
+    });
     // w,a,s,d,f,g,c,v,z,x,q,r,t,up,left,down,right
-
   }
 }).start();
