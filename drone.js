@@ -1,6 +1,6 @@
 "use strict";
 
-var Cylon = require('cylon');
+var Cylon = require('cylon', 'cylon-ardrone');
 
 Cylon.robot({
 
@@ -13,7 +13,6 @@ Cylon.robot({
     drone: { driver: 'ardrone', connection: 'ardrone' },
     keyboard: { driver: 'keyboard', connection: 'keyboard' }
   },
-
 
 
   work: function(my) {
