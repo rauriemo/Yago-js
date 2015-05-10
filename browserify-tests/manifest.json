@@ -1,0 +1,28 @@
+{
+  "name": "Cylon - Chrome App Example",
+  "description": "Running Cylon.js inside a Chrome app",
+
+  "manifest_version": 2,
+
+  "version": "0.1.0",
+
+  "app": {
+    "background": {
+      "scripts": ["background.js"]
+    }
+  },
+
+  "permissions": [
+    "serial",
+    "unlimitedStorage",
+    "http://*/",
+    "https://*/",
+    "*://*/",
+    "tts",
+    "notifications",
+    "storage",
+    "videoCapture",
+    "audioCapture"
+  ]
+}
+
